@@ -1,0 +1,109 @@
+*{
+    font-family: 'Rubik';
+}
+
+body{
+    margin: 0;
+    background-color: gainsboro;
+}
+
+header{
+    background: url(../images/pattern-bg.png);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-arrow{
+    width: 12px;
+}
+
+input{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 17%);
+    font-weight: 400;
+}
+
+input::placeholder{
+    color: hsl(0, 0%, 59%);
+}
+
+button{
+    background-color: black;
+    height: 44px;
+    width: 60px;
+    border: none;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: -135px;
+    padding: 20px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 35px 0 35px;
+    margin: 15px 0 15px 0;
+}
+
+hr{
+    background-color: hsl(0, 0%, 59%);
+    width: 1px;
+    height: 70px;
+}
+
+b{
+    color: hsl(0, 0%, 59%);
+    margin: 0;
+}
+
+h2{
+    color: hsl(0, 0%, 17%);
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
