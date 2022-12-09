@@ -58,6 +58,7 @@ button{
     height: 44px;
     width: 60px;
     border: none;
+    cursor: pointer;
 }
 
 section{
@@ -69,11 +70,12 @@ section{
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
     overflow: hidden;
-    height: fit-content;
+    height: 100px;
     width: fit-content;
     position: absolute;
     bottom: -135px;
     padding: 20px;
+    z-index: 2000;
 }
 
 div{
@@ -106,4 +108,75 @@ main{
     justify-content: center;
     align-items: center;
     height: 600px;
+}
+
+.largestdata{
+    width: 230px;
+}
+
+.img{
+    position: relative;
+    z-index: 10000;
+} 
+
+
+@media screen and (max-width:380px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 20px;
+        background-color: hsl(0, 0%, 100%);
+        overflow:visible;
+        height: fit-content;
+        width: 300px;
+        position: absolute;
+        bottom: -295px;
+        padding: 20px;
+        z-index: 2000;
+    }
+
+    hr{
+        background-color: hsl(0, 0%, 59%);
+        width: 100px;
+        height: 1px;
+    }
+
+    h2{
+        color: hsl(0, 0%, 17%);
+        margin: 0;
+        font-size: 20px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding:0;
+        margin:0;
+    }
+
+    input{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 15px;
+        width: 250px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: hsl(0, 0%, 17%);
+        font-weight: 400;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        width: 380px;
+    }
 }
